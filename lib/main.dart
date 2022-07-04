@@ -53,39 +53,70 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Center(
-          child: Column(
+        body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Text(
-                'You have pushed the button this many times:',
-              ),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.headline4,
-              ),
-            ],
-          ),
-        ),
-        floatingActionButton: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-            FloatingActionButton(
-              // first FAB to perform decrement
-              onPressed: _decrementCounter,
-              child: Icon(Icons.remove),
-            ),
-            FloatingActionButton(
-              // second FAB to perform increment
-              onPressed: _incrementCounter,
-              child: Icon(Icons.add),
-            ),
-            FloatingActionButton(
-              // second FAB to perform increment
-              onPressed: _returnOrignal,
-              child: Text("0"),
-            ),
-          ],
-        ));
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                const Text(
+                  'You have pushed the button this many times:',
+                ),
+                Text(
+                  '$_counter',
+                  style: Theme.of(context).textTheme.headline4,
+                ),
+              ]),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  FloatingActionButton(
+                    // first FAB to perform decrement
+                    onPressed: _decrementCounter,
+                    child: Icon(Icons.remove),
+                  ),
+                  FloatingActionButton(
+                    // second FAB to perform increment
+                    onPressed: _incrementCounter,
+                    child: Icon(Icons.add),
+                  ),
+                  FloatingActionButton(
+                    // second FAB to perform increment
+                    onPressed: _returnOrignal,
+                    child: Text("0"),
+                  ),
+                ],
+              )
+            ]));
   }
 }
+
+/*
+          children: <Widget>[
+            const Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headline4,
+            ),
+            column(
+
+            ),
+          ],
+                          FloatingActionButton(
+                // first FAB to perform decrement
+                onPressed: _decrementCounter,
+                child: Icon(Icons.remove),
+              ),
+              FloatingActionButton(
+                // second FAB to perform increment
+                onPressed: _incrementCounter,
+                child: Icon(Icons.add),
+              ),
+              FloatingActionButton(
+                // second FAB to perform increment
+                onPressed: _returnOrignal,
+                child: Text("0"),
+              ),
+
+
+*/

@@ -57,11 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                const Text(
-                  'You have pushed the button this many times:',
-                ),
-              ]
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center, 
+                children: [
+                  const Text(
+                    'You have pushed the button this many times:',
+                  ),
+                ]
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -76,23 +78,38 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   FloatingActionButton(
-                    // first FAB to perform decrement
                     onPressed: _decrementCounter,
                     child: Icon(Icons.remove),
                   ),
                   FloatingActionButton(
-                    // second FAB to perform increment
                     onPressed: _incrementCounter,
                     child: Icon(Icons.add),
                   ),
                   FloatingActionButton(
-                    // second FAB to perform increment
                     onPressed: _returnOrignal,
                     child: Text("0"),
                   ),
                 ],
-              )
-            ]));
+              ),
+             Row(
+                mainAxisAlignment: MainAxisAlignment.center, 
+                children: [
+                  const Text(
+                    ' ',
+                  ),
+                ]
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center, 
+                children: [
+                  const Text(
+                    'Made by Thamognya Kodi. Check out the source code at https://github.com/Thamognya/flutter-counter-app',
+                  ),
+                ]
+              ),
+            ]
+          )
+        );
   }
 }
 

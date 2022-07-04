@@ -1,0 +1,28 @@
+{
+  "name": "flutter-counter-app",
+  "version": "0.0.1",
+  "description": "A new Flutter project.",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "run": "flutter run",
+    "build": "flutter build",
+    "prettier": "prettier --write '**/*.{js,jsx,ts,tsx,dart}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thamognya/flutter-counter-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Thamognya/flutter-counter-app/issues"
+  },
+  "homepage": "https://github.com/Thamognya/flutter-counter-app#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

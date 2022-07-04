@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Counter'),
+      home: const MyHomePage(title: 'A Simple Counter'),
     );
   }
 }
@@ -60,11 +60,17 @@ class _MyHomePageState extends State<MyHomePage> {
                 const Text(
                   'You have pushed the button this many times:',
                 ),
-                Text(
-                  '$_counter',
-                  style: Theme.of(context).textTheme.headline4,
-                ),
-              ]),
+              ]
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    '$_counter',
+                    style: Theme.of(context).textTheme.headline4,
+                  ),
+                ]
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
